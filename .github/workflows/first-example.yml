@@ -1,4 +1,4 @@
-name: My Awesome App
+name: My NodeJS App
 on: 
   push:
     branches:
