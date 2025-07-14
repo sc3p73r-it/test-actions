@@ -23,7 +23,7 @@ jobs:
 
 
       - name: Install Dependencies
-        run: npm install express
+        run: npm install
 
-      - name: Run app with timeout
-        run: timeout 10s node app.js
+      - name: Run Unit Tests
+        run: npm test
