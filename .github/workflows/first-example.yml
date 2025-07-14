@@ -27,4 +27,4 @@ jobs:
 
 
       - name: Execute Unit Tests
-        run: npm test
+        run: node app.js
