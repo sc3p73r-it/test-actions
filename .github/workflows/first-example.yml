@@ -23,7 +23,7 @@ jobs:
 
 
       - name: Install Dependencies
-        run: npm install express
+        run: npm install
 
       - name: Run Unit Tests
         run: npm test
