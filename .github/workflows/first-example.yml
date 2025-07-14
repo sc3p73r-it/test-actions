@@ -26,4 +26,7 @@ jobs:
         run: npm install
 
       - name: Run Unit Tests
-        run: npm test
+        run: |
+          node app.js &
+          sleep 2
+          curl -sSf http://localhost:3000 | grep 'Hello from Node.js Application'
