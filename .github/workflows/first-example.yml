@@ -27,4 +27,8 @@ jobs:
 
 
       - name: Execute Unit Tests
-        run: node app.js
+        run: npm test
+
+      - name: Run app with timeout
+        run: |
+          timeout 10s node app.js
