@@ -27,6 +27,6 @@ jobs:
 
       - name: Run Unit Tests
         run: |
-          node app.js &
+          npm test &
           sleep 2
           curl -sSf http://localhost:3000 | grep 'Hello from Node.js Application'
